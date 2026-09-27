@@ -48,15 +48,29 @@ This project was developed as part of a university capstone project. It demonstr
 
 ## System Architecture
 
-```
-┌─────────────┐    Serial     ┌───────────────────┐    UDP      ┌──────────────┐
-│ Arduino Nano │──────────────▶│ MATLAB / Simulink │────────────▶│    Unity     │
-│              │   115200 baud │                   │  127.0.0.1  │              │
-│ • 2× MPU6050 │   CSV format  │ • Serial parse    │  port 55001 │ • 3D arm     │
-│ • EMG sensor │               │ • EMG filter      │  30 Hz      │   model      │
-│   (A0 pin)   │               │ • Butterworth LPF │             │ • Real-time  │
-└─────────────┘               │ • UDP sender      │             │   animation  │
-                               └───────────────────┘             └──────────────┘
+```mermaid
+flowchart LR
+    subgraph HW["🔌 Arduino Nano"]
+        direction TB
+        MPU["2× MPU6050\n(I2C: 0x68, 0x69)"]
+        EMG["EMG Sensor\n(Analog A0)"]
+    end
+
+    subgraph ML["⚙️ MATLAB / Simulink"]
+        direction TB
+        SP["Serial Parser"]
+        EF["EMG Filter\n(Butterworth LPF)"]
+        UDP_S["UDP Sender"]
+    end
+
+    subgraph UN["🎮 Unity 3D"]
+        direction TB
+        UDP_R["UDP Receiver"]
+        ARM["3D Arm Model\nReal-time Animation"]
+    end
+
+    HW -- "Serial 115200 baud\nCSV: time, angle, emg" --> ML
+    ML -- "UDP 127.0.0.1:55001\n30 Hz" --> UN
 ```
 
 ---
