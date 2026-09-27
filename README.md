@@ -30,7 +30,7 @@ A real-time biomedical signal acquisition system that captures **EMG (Electromyo
 
 ## Overview
 
-This project was developed as part of a university capstone project (Đồ án). It demonstrates a complete end-to-end pipeline:
+This project was developed as part of a university capstone project. It demonstrates a complete end-to-end pipeline:
 
 1. **Sensor Acquisition** — Arduino Nano reads EMG analog signal and dual MPU6050 quaternion data via I2C/DMP.
 2. **Signal Processing** — MATLAB applies Butterworth low-pass filtering to EMG, computes elbow flexion angle from relative quaternion orientation.
