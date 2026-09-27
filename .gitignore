@@ -18,16 +18,8 @@ Unity System/.vs/
 Unity System/My project/
 
 # ===========================
-# Large files (exceed GitHub 100MB limit)
+# Premiere Pro project files (not needed in repo)
 # ===========================
-# Model 3D files (~146MB each)
-Model 3D/*.blend
-Model 3D/*.blend1
-Model 3D/*.fbx
-Unity System/Assets/Models/*.fbx
-
-# Video files (~154MB)
-Video EMG/*.mp4
 Video EMG/*.prproj
 Video EMG/*.prin
 Video EMG/Adobe Premiere Pro Auto-Save/
