@@ -1,0 +1,46 @@
+# ===========================
+# Build & Cache
+# ===========================
+.pio/
+EMG_MPU_VSCODE/src/build/
+EMG_MPU_VSCODE/.pio/
+slprj/
+
+# ===========================
+# Unity generated files
+# ===========================
+Unity System/Library/
+Unity System/Temp/
+Unity System/Logs/
+Unity System/UserSettings/
+Unity System/obj/
+Unity System/.vs/
+Unity System/My project/
+
+# ===========================
+# Large files (exceed GitHub 100MB limit)
+# ===========================
+# Model 3D files (~146MB each)
+Model 3D/*.blend
+Model 3D/*.blend1
+Model 3D/*.fbx
+Unity System/Assets/Models/*.fbx
+
+# Video files (~154MB)
+Video EMG/*.mp4
+Video EMG/*.prproj
+Video EMG/*.prin
+Video EMG/Adobe Premiere Pro Auto-Save/
+Video EMG/Adobe Premiere Pro Audio Previews/
+
+# ===========================
+# IDE / OS
+# ===========================
+.vscode/
+*.asv
+*.suo
+*.user
+*.csproj
+*.sln
+Thumbs.db
+.DS_Store

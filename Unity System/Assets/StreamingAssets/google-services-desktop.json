@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "780720853539",
+    "project_id": "emg-project-5ec35",
+    "storage_bucket": "emg-project-5ec35.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780720853539:android:a37f1c783f363a0db45796",
+        "android_client_info": {
+          "package_name": "EMGSingle.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXnHI_F1tWwuEShZTn7gYrhFJgzKNc0TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
