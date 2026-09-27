@@ -303,7 +303,7 @@ A demonstration video is available at [`Video EMG/Video simulation.mp4`](Video%2
 
 ## License
 
-This project was developed for academic purposes as part of a university capstone project (Đồ án 1).
+This project was developed for academic purposes as part of a university capstone project.
 
 ---
 
