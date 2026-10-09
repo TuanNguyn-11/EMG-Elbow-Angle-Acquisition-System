@@ -289,6 +289,7 @@ time_ms,elbow_angle,emg_raw,emg_envelope,baseline,emg_envelope,active
 | `emg_raw` | int | 0–1023 | Raw EMG ADC value |
 | `emg_envelope` | float | 0+ | Filtered EMG envelope amplitude |
 | `baseline` | float | 0+ | Calibrated EMG baseline |
+| `emg_envelope` (field 6) | float | 0+ | Same value as field 4 — kept so the packet has 7 fields (see `sprintf` in `run_emg_live_local.m`) |
 | `active` | int | 0/1 | Muscle contraction detected |
 
 **Rate:** 30 Hz (configurable via `UDP_RATE_HZ`)
