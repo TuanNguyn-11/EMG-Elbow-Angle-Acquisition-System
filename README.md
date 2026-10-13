@@ -108,6 +108,8 @@ Arduino Nano
 | **Unity** | 2021.3+ | 3D visualization of arm motion |
 | **Blender** (optional) | 3.x | 3D arm model editing |
 
+> **Tip:** Run `pio device list` to identify the Arduino serial port, then use the same port in `platformio.ini` and `run_emg_live_local.m`.
+
 ### Arduino Libraries (auto-installed by PlatformIO)
 
 - `jrowberg/I2Cdevlib-MPU6050@^1.0.0`
